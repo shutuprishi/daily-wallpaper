@@ -17,6 +17,7 @@ const colors = [
 function setRandomColor() {
     const color = colors[Math.floor(Math.random() * colors.length)];
     document.body.style.background = color;
+    document.getElementById('toolbar').style.background = color;
 }
 
 // Set daily color on load
@@ -25,6 +26,7 @@ function setDailyColor() {
     const dayOfYear = Math.floor((now - new Date(now.getFullYear(), 0, 0)) / 86400000);
     const color = colors[dayOfYear % colors.length];
     document.body.style.background = color;
+    document.getElementById('toolbar').style.background = color;
 }
 
 // Set up the button to randomize color

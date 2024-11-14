@@ -15,19 +15,28 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--bg-color, #3498db); /* Default color */
-    transition: background-color 1s ease; /* Smooth transition */
-    font-family: "PP Formula", sans-serif; /* Replace "Your Font Name" with your font's name */
+    background-color: var(--bg-color, #3498db);
+    transition: background-color 1s ease;
+    font-family: "Your Font Name", sans-serif; /* Replace with your font name */
+}
 
+/* Header Toolbar Styling */
+#toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--bg-color, #3498db); /* Sync with background */
 }
 
 /* Randomize Button Styling */
 #randomize-btn {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    padding: 6px 12px; /* Reduced padding by 40% */
-    font-size: 12px; /* Reduced font size */
+    padding: 6px 12px;
+    font-size: 12px;
     background-color: #ffffff;
     color: #333;
     border: 2px solid #333;
@@ -52,6 +61,4 @@ body {
 #randomize-btn:active {
     background-color: #555;
     color: #ffffff;
-
-
 }

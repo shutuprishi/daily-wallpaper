@@ -1,4 +1,4 @@
-// Expanded list of colors and gradients
+// List of colors and gradients
 const colors = [
     '#3498db', '#e74c3c', '#2ecc71', '#f1c40f', '#9b59b6', '#1abc9c', '#e67e22', '#34495e', 
     '#d35400', '#2c3e50', '#8e44ad', '#c0392b', '#16a085', '#2980b9', '#27ae60', '#f39c12',
@@ -13,24 +13,22 @@ const colors = [
     'linear-gradient(45deg, #a8edea, #fed6e3)'  // pastel gradient
 ];
 
-// Function to set a random color
+// Function to set a random color or gradient as background
 function setRandomColor() {
     const color = colors[Math.floor(Math.random() * colors.length)];
     document.body.style.background = color;
-    document.getElementById('toolbar').style.background = color;
 }
 
-// Set daily color on load
+// Set a color based on the day of the year (initial color)
 function setDailyColor() {
     const now = new Date();
     const dayOfYear = Math.floor((now - new Date(now.getFullYear(), 0, 0)) / 86400000);
     const color = colors[dayOfYear % colors.length];
     document.body.style.background = color;
-    document.getElementById('toolbar').style.background = color;
 }
 
-// Set up the button to randomize color
+// Add event listener for the button to change the color
 document.getElementById('randomize-btn').addEventListener('click', setRandomColor);
 
-// Run the daily color function on page load
+// Set the initial color on page load
 setDailyColor();

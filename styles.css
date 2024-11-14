@@ -15,26 +15,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--bg-color, #3498db);
-    transition: background-color 1s ease;
-    font-family: "Your Font Name", sans-serif; /* Replace with your font name */
-}
-
-/* Header Toolbar Styling */
-#toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: var(--bg-color, #3498db); /* Sync with background */
+    background-color: var(--bg-color, #3498db); /* Default color */
+    transition: background-color 1s ease; /* Smooth transition */
+    font-family: Arial, sans-serif; /* Adjust to your desired font */
 }
 
 /* Randomize Button Styling */
 #randomize-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
     padding: 6px 12px;
     font-size: 12px;
     background-color: #ffffff;
@@ -54,7 +44,7 @@ body {
 /* Focus State */
 #randomize-btn:focus {
     outline: none;
-    box-shadow: 0 0 5px #3498db;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Pressed (Active) State */

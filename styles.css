@@ -1,0 +1,57 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color, #3498db); /* Default color */
+    transition: background-color 1s ease; /* Smooth transition */
+    font-family: "PP Formula", sans-serif; /* Replace "Your Font Name" with your font's name */
+
+}
+
+/* Randomize Button Styling */
+#randomize-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 6px 12px; /* Reduced padding by 40% */
+    font-size: 12px; /* Reduced font size */
+    background-color: #ffffff;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover State */
+#randomize-btn:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
+/* Focus State */
+#randomize-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px #3498db;
+}
+
+/* Pressed (Active) State */
+#randomize-btn:active {
+    background-color: #555;
+    color: #ffffff;
+
+
+}
